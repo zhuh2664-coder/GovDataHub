@@ -1,0 +1,104 @@
+[
+  {
+    "resource_name": "企业注册信息",
+    "department": "市场监管局",
+    "fields": [
+      {
+        "name": "credit_code",
+        "type": "string",
+        "sensitivity": "sensitive",
+        "description": "来自 市场监管局"
+      },
+      {
+        "name": "enterprise_name",
+        "type": "string",
+        "sensitivity": "public",
+        "description": "来自 市场监管局"
+      },
+      {
+        "name": "registered_capital",
+        "type": "float",
+        "sensitivity": "public",
+        "description": "来自 市场监管局"
+      },
+      {
+        "name": "establishment_date",
+        "type": "string",
+        "sensitivity": "public",
+        "description": "来自 市场监管局"
+      },
+      {
+        "name": "business_scope",
+        "type": "string",
+        "sensitivity": "public",
+        "description": "来自 市场监管局"
+      }
+    ],
+    "source_file": "data/enterprise_registration.csv",
+    "data_lineage": "原始表: data/enterprise_registration.csv | 提供单位: 市场监管局"
+  },
+  {
+    "resource_name": "社保参保信息",
+    "department": "人力资源和社会保障局",
+    "fields": [
+      {
+        "name": "id_number",
+        "type": "integer",
+        "sensitivity": "sensitive",
+        "description": "来自 人力资源和社会保障局"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "sensitivity": "public",
+        "description": "来自 人力资源和社会保障局"
+      },
+      {
+        "name": "enterprise_credit_code",
+        "type": "string",
+        "sensitivity": "sensitive",
+        "description": "来自 人力资源和社会保障局"
+      },
+      {
+        "name": "pension_base",
+        "type": "float",
+        "sensitivity": "public",
+        "description": "来自 人力资源和社会保障局"
+      }
+    ],
+    "source_file": "data/social_insurance.csv",
+    "data_lineage": "原始表: data/social_insurance.csv | 提供单位: 人力资源和社会保障局"
+  },
+  {
+    "resource_name": "不动产登记信息",
+    "department": "自然资源和规划局",
+    "fields": [
+      {
+        "name": "property_id",
+        "type": "string",
+        "sensitivity": "sensitive",
+        "description": "来自 自然资源和规划局"
+      },
+      {
+        "name": "owner_credit_code",
+        "type": "string",
+        "sensitivity": "sensitive",
+        "description": "来自 自然资源和规划局"
+      },
+      {
+        "name": "address",
+        "type": "string",
+        "sensitivity": "public",
+        "description": "来自 自然资源和规划局"
+      },
+      {
+        "name": "area_sqm",
+        "type": "float",
+        "sensitivity": "public",
+        "description": "来自 自然资源和规划局"
+      }
+    ],
+    "source_file": "data/real_estate.csv",
+    "data_lineage": "原始表: data/real_estate.csv | 提供单位: 自然资源和规划局"
+  }
+]
